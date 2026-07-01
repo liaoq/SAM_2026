@@ -2,6 +2,18 @@
 
 Code for SAM vs backpropagation comparison experiments (`run_netv_compare_with_bp.py`) and plotting (`plot_stat_timeseries.py`).
 
+## Errata and clarifications
+
+Minor corrections and explanations to the manuscript text that could not be updated in the submitted revision PDF. We document them here for reviewers and readers of this repository.
+
+### 1. Figure 4 caption (panel B)
+
+**Submitted text:** “**B:** cosine similarity between SAL and backprop gradients on $W^\ell$ stays near one on all layers”
+
+**Corrected text:** “**B:** cosine similarities between SAL and backprop gradients on $W^\ell$ increase during learning and reach high level”
+
+**Explanation:** This wording was introduced incorrectly during AI-assisted polishing. In the experiments, cosine similarities can rise to a high level (roughly 0.8 on typical layers) but do not stay near 1 on all layers.
+
 ## Setup
 
 ```bash
