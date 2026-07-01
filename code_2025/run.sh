@@ -1,0 +1,11 @@
+python main.py  --dataset cifar10 \
+                --num_classes 10 \
+                --hidden 200 \
+                --root ./data \
+                --batch_size 256 \
+                --epochs 20 \
+                --lr 0.5e-2 \
+                --seed 0 \
+                --device cuda \
+                --w_bits 4 \
+                --a_bits 4
